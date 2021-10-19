@@ -1,0 +1,367 @@
+:root{
+    --bg-opacity : 0;
+}
+
+html, body{
+    height: auto;
+    margin: 0px;
+ 
+}
+.pageTitle{
+    margin: auto;
+    text-align: center;
+}
+
+.pageTitle p {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.contactIcons{
+    display: flex;
+    width: 30px;
+    height: 90px;
+    flex-direction: column;
+    float:left;
+    background-color:lightgrey;
+    justify-content: space-between;
+}
+
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1.96em;
+    width: 150px;
+    height: 90px;
+    background-color:lightgrey;
+    z-index: 3;
+}
+
+.contactText{
+    padding: 2%;
+}
+
+.myInfo {
+    bottom: 0px;
+    right: 0px;
+    position: fixed;
+    z-index: 3;
+}
+
+.myInfo img {
+    width: 25px;
+    height: 25px;
+}
+
+.myEducation {
+    width: 60%;
+    margin: auto;
+    border-radius: 2%;
+    box-shadow: 10px 10px rgb(0 0 0 / 0.2);
+    border: 1;
+    background-color: rgba(255, 255, 255, 0.801);
+    overflow: hidden;
+}
+
+.myEducation h1 {
+    text-align: center;
+}
+
+.education1{
+    position: relative;
+    left: 70%;
+    width: 100%;
+    height: auto;
+    transition: 1.2s;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.education1:hover {
+    left:35%;
+}
+
+.education2{
+    position: relative;
+    right: 70%;
+    width: 100%;
+    height: auto;
+    transition: 1.2s;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.education2:hover {
+    right:35%;
+}
+
+.educationImg , .skillsImgleft, .skillsImgright{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+ .educationText{
+    max-width: 30%;
+} 
+
+.educationImg{
+    width: 25%;
+    height: 30%;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+hr {
+    border: 0;
+    width: 96%;
+    height: 2px;
+    background-color: lightgray;
+    border-top: 5px solid lightgrey;
+    border-radius: 5px;
+  }
+
+.mySkills {
+
+    width: 50%;
+    margin: 2%;
+    margin-left: 12.5%;
+    border-radius: 2%;
+    box-shadow: 10px 10px rgb(0 0 0 / 0.2);
+    border: 1;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.801);
+}
+.titleText {
+    text-align: center;
+}
+
+.skill1{
+    display: flex;
+    align-self: flex-start;
+    flex-direction: row;
+    max-width: 46%;
+    padding: 1em;
+
+}
+
+.skillText{
+    transition: 0.75s;
+    opacity: var(--bg-opacity);
+}
+
+.skill1:hover ,.skill2:hover{
+    --bg-opacity: 1;
+}
+
+.skill2{
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 46%;
+    padding: 1em;
+    
+}
+
+.skillsOrder{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+}
+
+.mySkills h1{
+    text-align: center;
+}
+
+.myHobbies {
+    display: flex;
+    flex-direction: column;
+    width: 21%;
+    margin: 2%;
+    border-radius: 2%;
+    box-shadow: 10px 10px rgb(0 0 0 / 0.2);
+    border: 1;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.801);
+}
+
+.myHobbies h1 {
+    text-align: center;
+}
+
+.myHobbies img {
+    width: 80%;
+    height:80%;
+}
+
+.myHobbies :nth-child(2n){
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.hobbie{
+    display: flex;
+    align-self: flex-start;
+    flex-direction: row;
+    padding: 1em;
+    border: none;
+    transition: transform 0.5s;
+}
+
+.hobbie:hover{
+    transform: scale(1.05);
+}
+
+.hobbieText{
+    text-align: center;
+    max-width: 60%;
+}
+
+.myGoals {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 75%;
+    margin: auto;
+    border-radius: 2%;
+    box-shadow: 10px 10px rgb(0 0 0 / 0.2);
+    border: 1;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.801);
+}
+
+.goal{
+    text-align: center;
+    width: 30%;
+}
+
+/* .goalInner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.goal:hover .goalInner {
+    transform: rotateY(180deg);
+}
+
+.goalFront, .goalBack {
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+  
+.goalBack{
+    transform: rotateY(180deg);
+} */
+
+.myInformation{
+    display: flex;
+    flex-direction: column;
+}
+
+.skillsAndhobbies{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.main{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+h1 ,.mySkills h1{ 
+    font-family: "Open Sans"; 
+    font-size: 28px; font-style: normal; 
+    font-variant: normal; font-weight: 700; 
+    line-height: 26.4px; 
+} 
+h3 ,.mySkills h3{ 
+    font-family: "Open Sans"; 
+    font-size: 18px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 15.4px; 
+} 
+p ,.mySkills span{ 
+    font-family: "Open Sans"; 
+    font-size: 18px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 20px; 
+} 
+
+
+  @media screen and (max-width: 1600px) {
+
+    h1{ 
+        font-family: "Open Sans"; 
+        font-size: 20px; font-style: normal; 
+        font-variant: normal; font-weight: 350; 
+        line-height: 16px;
+    } 
+    h3{ 
+        font-family: "Open Sans"; 
+        font-size: 15px; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 350; 
+        line-height: 10px; 
+    } 
+    p ,.mySkills span{ 
+        font-family: "Open Sans"; 
+        font-size: 15px; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 200; 
+        line-height: 13px; 
+    } 
+    .mySkills{
+        flex-direction: column;
+    }
+    .education1, .education2,.skill1,.skill2,.hobbie,.goal{
+        max-width: 80%;
+    }
+    .skillsAndhobbies{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0%;
+    }
+    .myHobbies{
+        margin-left: 12.5%;
+        width: 50%;
+    }
+    .myGoals{
+        flex-direction: column;
+        width: 30%;
+    }
+
+
+}
